@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    
+}
+@font-face {
+    font-family: 'PF Tempesta Five', sans-serif;                                              
+    src: url('https://fonts.cdnfonts.com/css/public-pixel');
+}
+
+.gif-container {
+    position: relative;
+    max-width: 80%;
+    overflow: hidden;
+    border: 9px solid rgb(66, 66, 66);
+    border-style: double;
+    margin: 0 auto;
+  }
+.gif {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  .gif.active {
+    display: block;
+  }
+  
+  
+  .prev-btn,
+  .next-btn {
+    font-family: 'Public Pixel', sans-serif;
+    font-size: 3rem;
+    color: rgb(94, 46, 207);
+    background:none;
+    margin-inline:2rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  
+  @media only screen and (min-width: 768px) {
+    /* styles for screens wider than 768px */
+    .gif-container {
+      max-width: 600px;
+      margin: 0 auto;
+    
+    }
+  
+    .controls {
+      position: static;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+  
+  
+  .next-btn:active {
+    transform: scale(1.1);
+  }
+
+  .prev-btn:active {
+    transform: scale(1.1);
+  }
+
+  .next-btn:hover {
+    transform: scale(1.1);
+  }
+  .prev-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .image-container{
+    text-align: center; /* center text */
+    padding: 2px;
+    max-width: 20%; /* adjust as needed */
+    margin: 0 auto; /* center horizontally */
+    
+    
+  }
+
+  .img-7{
+    max-width: 80%;
+  }
+  .colored-letter3 {
+    color: rgb(255, 255, 255);
+    position: relative;
+    -webkit-text-stroke: 3px rgb(94, 94, 94); /* for Safari */
+    
+    
+  }
+
+  hr {
+    border: none;
+    border-top: 3px solid #252525;
+    border-style: double;
+    margin: 1em 0;
+  }
+    /* Estilo específico para dispositivos móviles */
+    @media screen and (max-width: 768px) {
+      hr {
+        margin: 0.5em 0;
+      }
+    }
+
+    .img-4 {
+          
+        max-width: 70%;     
+        
+      } 

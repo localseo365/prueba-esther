@@ -1,0 +1,599 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    
+}
+@font-face {
+    font-family: 'PF Tempesta Five', sans-serif;                                              
+    src: url('https://fonts.cdnfonts.com/css/public-pixel');
+}
+
+
+
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+.video {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  background-color: #000000;
+  border: 5px solid rgb(255, 255, 255);
+  border-style: double;
+}
+
+.video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  
+}
+
+.video::-webkit-media-controls {
+  filter: grayscale(100%);
+  z-index: 1;
+  
+}
+
+.video2 {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  background-color: #000000;
+  border: 5px solid rgb(75, 0, 146);
+  border-style: double;
+}
+
+.video2::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  
+}
+
+.video2::-webkit-media-controls {
+  filter: grayscale(100%);
+  z-index: 1;
+  
+}
+
+.video3 {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  background-color: #000000;
+  border: 5px solid rgb(129, 129, 129);
+  border-style: double;
+}
+
+.video3::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  
+}
+
+.video3::-webkit-media-controls {
+  filter: grayscale(100%);
+  z-index: 1;
+  
+}
+
+
+.colored-letter {
+  color: rgb(209, 31, 209);
+}
+
+.colored-letter2 {
+  color: rgb(0, 196, 65);
+  position: relative;
+  animation: glitch 1s infinite;
+}
+
+.colored-letter3 {
+  color: rgb(138, 138, 138);
+  position: relative;
+  animation: glitch 1s infinite;
+}
+
+.text-box1 {
+    text-align: center; /* center text */
+    padding: 10px;
+    max-width: 30%; /* adjust as needed */
+    margin: 0 auto; /* center horizontally */
+    border: 5px solid rgb(255, 255, 255);
+    border-style: double;
+    background-color: #000000;
+    height:230px;
+    overflow: hidden;
+   
+  }
+  
+  .text-box1 h1 {
+    padding: 10px 10px;
+    font-family: 'Public Pixel', sans-serif;
+    font-size: 13px; /* adjust as needed */
+    line-height: 1.5; /* adjust as needed */
+    color: rgb(255, 255, 255);
+    height:230px;
+   
+    
+    
+  }
+
+
+  .text-box1 h1::after {
+    content: "|"; /* cursor-like character */
+    display: inline-block;
+    margin-right: 8px; /* adjust distance from text */
+    animation: cursor 0.4s infinite; /* adjust animation speed */
+    
+  }
+
+  
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes cursor {
+    50% { opacity: 0; }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .text-box1 {
+      padding: 5px;
+      max-width: 80%;
+      display: block; /* reset display property for mobile */
+    }
+  
+    .text-box1 h1 {
+      font-size: 12px; /* update font size for mobile */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .text-box1 h1 {
+      font-size: 9px; /* update font size for smaller mobile screens */
+    }
+  }
+
+  .button-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+  }
+
+  .button-download {
+    margin: 14px;
+    max-width: 100%;
+    transition: transform 0.2s ease-in-out;
+    animation: blink 1s ease-in-out infinite; /* blinking animation */
+    
+  }
+  
+  @keyframes blink {
+    0% {
+      filter: contrast(90%);
+    }
+    50% {
+      filter: contrast(120%);
+    }
+    100% {
+      filter: contrast(90%);
+    }
+  }
+  
+  .button-download:hover {
+    transform: scale(1.1);
+  }
+  
+  .button-download:active {
+    transform: scale(0.9);
+    box-shadow: none;
+    animation: none; /* turn off animation on click */
+  }
+.button-download:hover {
+    transform: scale(1.1);
+    
+  }
+  
+.button-download:active {
+    transform: scale(0.9);
+    box-shadow: none;
+  }
+
+  hr {
+    border: none;
+    border-top: 3px solid #6b6b6b;
+    border-style: double;
+    margin: 1em 0;
+  }
+  
+  /* Estilo específico para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    hr {
+      margin: 0.5em 0;
+    }
+  }
+
+  .img-4 {
+          
+    max-width: 70%;     
+    
+  }  
+
+  .image-container3{
+    text-align: center; /* center text */
+    padding: 12px;
+    max-width: 30%; /* adjust as needed */
+    margin: 0 auto; /* center horizontally */
+    border: 5px solid rgb(255, 208, 0);
+    border-style: double;
+    
+  }
+
+  .image-container3 p{
+    font-family: 'Public Pixel', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 13px; /* adjust as needed */
+    line-height: 1.5; /* adjust as needed */
+    text-align: center;
+    
+  }
+
+  .img-5{
+    max-width: 70%;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .image-container3 {
+      padding: 10px;
+      max-width: 80%;
+      display: block; /* reset display property for mobile */
+    }
+  
+    .image-container3 p {
+      font-size: 12px; /* update font size for mobile */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .image-container3 p {
+      font-size: 9px; /* update font size for smaller mobile screens */
+    }
+  }
+  
+  .img-6{
+    max-width: 90%;
+  }
+  .img-7{
+    max-width: 80%;
+  }
+
+  .cat-img{
+    max-width: 20%;
+  }
+
+  .cat-img2{
+    max-width: 40%;
+  }
+  
+  .image-container4{
+    text-align: center; /* center text */
+    padding: 10px;
+    max-width: 30%; /* adjust as needed */
+    margin: 0 auto; /* center horizontally */
+    border: 5px solid rgb(75, 0, 146);
+    border-style: double;
+    
+  }
+
+  .image-container4 p{
+    font-family: 'Public Pixel', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 13px; /* adjust as needed */
+    line-height: 1.5; /* adjust as needed */
+    text-align: center;
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .image-container4 {
+      padding: 5px;
+      max-width: 80%;
+      display: block; /* reset display property for mobile */
+    }
+  
+    .image-container4 p {
+      font-size: 12px; /* update font size for mobile */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .image-container4 p {
+      font-size: 9px; /* update font size for smaller mobile screens */
+    }
+  }
+
+  .image-glitch{
+    text-align: center; /* center text */
+    padding: 12px;
+    max-width: 30%; /* adjust as needed */
+    margin: 0 auto; /* center horizontally */
+    border: 5px solid rgb(75, 0, 146);
+    border-style: double;
+    
+  }
+
+  .image-glitch p{
+    font-family: 'Public Pixel', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 13px; /* adjust as needed */
+    line-height: 1.5; /* adjust as needed */
+    text-align:center;
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .image-glitch {
+      padding: 10px;
+      max-width: 80%;
+      display: block; /* reset display property for mobile */
+    }
+  
+    .image-glitch p {
+      font-size: 12px; /* update font size for mobile */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .image-glitch p {
+      font-size: 9px; /* update font size for smaller mobile screens */
+    }
+  }
+
+  
+  .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .glitch span:first-child {
+    animation: glitch 500ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    transform: translate(-0.04em, -0.03em);
+    opacity: 0.75;
+  }
+  
+  .glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    transform: translate(0.04em, 0.03em);
+    opacity: 0.75;
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+        0.025em 0.04em 0 #fffc00;
+    }
+    15% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+        0.025em 0.04em 0 #fffc00;
+    }
+    16% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+        -0.05em -0.05em 0 #fffc00;
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+        -0.05em -0.05em 0 #fffc00;
+    }
+    50% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+        0 -0.04em 0 #fffc00;
+    }
+    99% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+        0 -0.04em 0 #fffc00;
+    }
+    100% {
+      text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+        -0.04em -0.025em 0 #fffc00;
+    }
+  }
+  
+
+  .image-container5{
+    text-align: center; /* center text */
+    padding: 10px;
+    max-width: 30%; /* adjust as needed */
+    margin: 0 auto; /* center horizontally */
+    border: 5px solid rgb(255, 93, 169);
+    border-style: double;
+    
+  }
+
+  .image-container5 p{
+    font-family: 'Public Pixel', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 13px; /* adjust as needed */
+    line-height: 1.5; /* adjust as needed */
+    text-align:justify;
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .image-container5 {
+      padding: 5px;
+      max-width: 80%;
+      display: block; /* reset display property for mobile */
+    }
+  
+    .image-container5 p {
+      font-size: 12px; /* update font size for mobile */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .image-container5 p {
+      font-size: 9px; /* update font size for smaller mobile screens */
+    }
+  }
+
+
+
+  .audio-container {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    
+  }
+
+  .audio-track {
+    margin: 8px;
+    
+  }
+
+
+  audio::-webkit-media-controls-panel {
+    background-color: rgb(192, 192, 192);
+    
+    
+  }
+
+  .gif-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .gif {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  .gif.active {
+    display: block;
+  }
+  
+  
+  .prev-btn,
+  .next-btn {
+    font-family: 'Public Pixel', sans-serif;
+    font-size: 3rem;
+    color: rgb(245, 245, 245);
+    background:none;
+    margin-inline: 4rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  
+  @media only screen and (min-width: 768px) {
+    /* styles for screens wider than 768px */
+    .gif-container {
+      max-width: 600px;
+      margin: 0 auto;
+  
+    }
+  
+    .controls {
+      position: static;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+  
+  
+  .next-btn:active {
+    transform: scale(1.1);
+  }
+
+  .prev-btn:active {
+    transform: scale(1.1);
+  }
+  
+  .image-glitch2{
+    text-align: center; /* center text */
+    padding: 10px;
+    max-width: 30%; /* adjust as needed */
+    margin: 0 auto; /* center horizontally */
+    border: none
+    
+  }
+
+  .image-glitch2 p{
+    font-family: 'Public Pixel', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 13px; /* adjust as needed */
+    line-height: 1.5; /* adjust as needed */
+    text-align: center;
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .image-glitch2 {
+      padding: 5px;
+      max-width: 80%;
+      display: block; /* reset display property for mobile */
+    }
+  
+    .image-glitch2 p {
+      font-size: 12px; /* update font size for mobile */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .image-glitch2 p {
+      font-size: 9px; /* update font size for smaller mobile screens */
+    }
+  }
+
+  .image-container9{
+    text-align: center; /* center text */
+    padding: 12px;
+    max-width: 30%; /* adjust as needed */
+    margin: 0 auto; /* center horizontally */
+    border: 5px solid rgb(129, 129, 129);
+    border-style: double;
+    
+  }
+
+  .image-container9 p{
+    font-family: 'Public Pixel', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 13px; /* adjust as needed */
+    line-height: 1.5; /* adjust as needed */
+    text-align: center;
+    
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .image-container9 {
+      padding: 10px;
+      max-width: 80%;
+      display: block; /* reset display property for mobile */
+    }
+  
+    .image-container9 p {
+      font-size: 12px; /* update font size for mobile */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .image-container9 p {
+      font-size: 9px; /* update font size for smaller mobile screens */
+    }
+  }

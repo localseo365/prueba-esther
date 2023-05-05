@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ilustracionstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">                                      
+</head>
+<body oncontextmenu="return false">
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/index.html"><img src="PNG/home.png" class="my-image"></a></li>
+        <li><a href="https://www.linkedin.com/in/esther-anastasia-l%C3%B3pez-dom%C3%ADnguez-04bb68215/"><img src="PNG/linkedin.png" class="my-image"></a></li>
+        <li><a href="https://www.artstation.com/esthersita"><img src="PNG/artstation.png" class="my-image"></a></li>
+        <li><a href="email.html"><img src="PNG/contact.png" class="my-image"></a></li>
+      </ul>
+    </nav>
+  </header>
+    
+ 
+<br>
+<br>
+
+    <div class="gallery">
+        <img src="png/otto.jpg" onclick="openModal(this);">
+        <img src="png/kanna.jpg" onclick="openModal(this);">
+        <img src="png/kenji.jpg" onclick="openModal(this);">
+        <img src="png/panty.jpg" onclick="openModal(this);">
+        <img src="png/ryuko.jpg" onclick="openModal(this);">
+        <img src="png/catarosa.jpg" onclick="openModal(this);">
+        <img src="png/catablue.jpg" onclick="openModal(this);">
+        <img src="png/karate.jpg" onclick="openModal(this);">
+        <img src="png/alina.jpg" onclick="openModal(this);">
+        <img src="png/apple.jpg" onclick="openModal(this);">
+        <img src="png/moon.jpg" onclick="openModal(this);">
+        <img src="png/sun.jpg" onclick="openModal(this);">
+        <img src="png/traidora.jpg" onclick="openModal(this);">
+        <img src="png/crush.jpg" onclick="openModal(this);">
+        <img src="png/promocuad.jpg" onclick="openModal(this);">
+        <img src="png/blues.jpg" onclick="openModal(this);">
+        <img src="png/madrecuad.jpg" onclick="openModal(this);">
+        <img src="png/santoente.jpg" onclick="openModal(this);">
+        
+      </div>
+      
+      <div class="modal">
+        <span class="close" onclick="closeModal();">&times;</span>
+        <img class="modal-content">
+        <a class="prev" onclick="showPrevImage()">&#10094;</a>
+        <a class="next" onclick="showNextImage()">&#10095;</a>
+        
+      </div>
+      <div class="text-box">
+        <h1>In this gallery I show what I think are my best illustrations. 
+          <br> If you want to see the others, they are available in my artstation!</h1>
+      </div>
+      
+      <script type = "text/javascript" src="galeria.js"></script>
+
+</body>
